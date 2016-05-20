@@ -18,9 +18,12 @@ action code
 terminal Identificador,PalabraReservada, INT,FLOAT,CHAR,STRING,opAritmeticos,opComparadores,opAsignaciones,opDelimitadores,opBits,opLogicos,ERROR;
 
 /* Declaracion de no terminales */
-non terminal S;
+non terminal S, PROGRAMA;
 
 /* inicio de gramatica */
-start with S;
+start with PROGRAMA;
 
-S::= INT;
+S::= PROGRAMA;
+PROGRAMA::= Identificador {: System.out.println("Identificador"); :}
+| INT
+;

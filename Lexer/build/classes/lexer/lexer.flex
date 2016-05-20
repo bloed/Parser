@@ -3,17 +3,20 @@ import java_cup.runtime.*;
 import Parser.Simbolos;
 %%
 
+%cupsym Simbolos
 %class Lexer
 %type Symbol
 %line
+%cup
 %column
 %unicode
+%char
+%ignorecase
 %state MYSTRING
 %state MYCHAR
 %state COMENTARIOBLOQUE
 %state COMENTARIOBLOQUE2
-%cupsym Simbolos
-%cup
+
 
 %{
     //esto se copia directamente
@@ -31,7 +34,6 @@ Letra = [a-zA-Z_]
 Numero = [0-9]
 Binario = (0|1)
 Octal = [0-7]
-Operador = [+,-] /*No se si tener todos los valores de operador servira para arreglar el ER de identificador */
 Hexadecimal = ([0-9]|[a-f])
 WhiteSpace = {LineTerminator} | [ ]
 LineTerminator = (\r\n|\r|\n)
@@ -40,7 +42,7 @@ IdentificadorInvalido = ([^\x00-\x7F])
 
 Comentario = {ComentarioDeLinea}
 ComentarioDeLinea = "#" {InputCharacter}* {LineTerminator}?
-ComentarioDeBloque = \"\"\"([\s\S]*)\"\"\"
+
 
 PalabraRerservada = ("assert"|"break"|"class"|"continue"|"def"|"del"|"elif"|"else"|"except"|"exec"|"finally"|"for"|"from"|"global"|"if"|"import"|"in"|"is"|"lambda"|"pass"|"print"|"raise"|"return"|"try"|"while"|"int"|"float"|"string"|"list"|"bool"|"None")
 
@@ -53,6 +55,7 @@ opDelimitadores ="("|")"|","|"."|":"|"\t"|"["|"]"|"{"|"}"
 
 %%
 /* Comentarios y espacios en blanco son ignorados */
+
 
 
 <YYINITIAL> {
