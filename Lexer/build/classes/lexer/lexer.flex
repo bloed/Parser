@@ -1,11 +1,13 @@
 package lexer;
 import java_cup.runtime.*;
+import Parser.Simbolos;
 %%
 
 %class Lexer
 %type Symbol
 %line
 %column
+%unicode
 %state MYSTRING
 %state MYCHAR
 %state COMENTARIOBLOQUE

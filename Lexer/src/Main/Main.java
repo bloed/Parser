@@ -14,6 +14,8 @@ public class Main {
 
     public static void main(String[] args) {
         String path = "src\\lexer\\lexer.flex";
+        ParserController parser = new ParserController();
+        parser.generarCup();
         generarLexer(path);
         Consola console = new Consola();
         console.setVisible(true);
@@ -28,8 +30,6 @@ public class Main {
             console.impirmir("No se pudo abrir el archivo.");
         }
         console.impirmir("\n Ahora se procede a parsear:");
-        ParserController parser = new ParserController();
-        //parser.generarCup();
     }
     public static void generarLexer(String path){
         File file=new File(path);

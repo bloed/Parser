@@ -4,9 +4,12 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Users/LUIS%20A/Documents/GitHub/Parser/Lexer/src/Parser/ParserController.java</file>
+            <file>file:/C:/Users/LUIS%20A/Documents/GitHub/Parser/Lexer/src/lexer/Lexer.java</file>
+            <file>file:/C:/Users/LUIS%20A/Documents/GitHub/Parser/Lexer/src/lexer/ScannerController.java</file>
             <file>file:/C:/Users/LUIS%20A/Documents/GitHub/Parser/Lexer/src/Parser/parser.cup</file>
-            <file>file:/C:/Users/LUIS%20A/Documents/GitHub/Parser/Lexer/src/Main/Consola.java</file>
             <file>file:/C:/Users/LUIS%20A/Documents/GitHub/Parser/Lexer/src/lexer/lexer.flex</file>
+            <file>file:/C:/Users/LUIS%20A/Documents/GitHub/Parser/Lexer/src/Parser/Simbolos.java</file>
+            <file>file:/C:/Users/LUIS%20A/Documents/GitHub/Parser/Lexer/src/lexer/Token.java</file>
             <file>file:/C:/Users/LUIS%20A/Documents/GitHub/Parser/Lexer/src/Main/Main.java</file>
         </group>
     </open-files>
