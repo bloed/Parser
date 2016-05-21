@@ -25,5 +25,5 @@ start with PROGRAMA;
 
 S::= PROGRAMA;
 PROGRAMA::= Identificador {: System.out.println("Identificador"); :}
-| INT
+| INT {: System.out.println("ebtero"); :}
 ;

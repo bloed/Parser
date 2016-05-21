@@ -10,7 +10,7 @@ import java.io.IOException;
 import java.io.Reader;
 import java.util.ArrayList;
 import java_cup.Lexer;
-import lexer.ScannerController;
+import Parser.ScannerController;
 import lexer.TokenDesplegable;
 
 

@@ -163,7 +163,7 @@ class CUP$Analizador$actions {
           case 3: // PROGRAMA ::= INT 
             {
               Object RESULT =null;
-
+		 System.out.println("ebtero"); 
               CUP$Analizador$result = parser.getSymbolFactory().newSymbol("PROGRAMA",1, ((java_cup.runtime.Symbol)CUP$Analizador$stack.peek()), ((java_cup.runtime.Symbol)CUP$Analizador$stack.peek()), RESULT);
             }
           return CUP$Analizador$result;

@@ -4,7 +4,7 @@ import Main.Consola;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.Reader;
-import java_cup.Lexer;
+
 
 public class ParserController {
     
@@ -33,10 +33,9 @@ public class ParserController {
     public void parsear(){
         try{
             Reader reader = new BufferedReader(new FileReader(path));
-            Analizador parser = new Analizador(new Lexer(reader));
-            Object result = parser.parse();
-            System.out.println(result.toString());
-            System.out.println("Finalizado");
+            Lexer lexer = new Lexer(reader);
+            Analizador parser = new Analizador(lexer);
+            parser.parse();
             
         }
         catch(Exception e){

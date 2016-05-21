@@ -1,5 +1,6 @@
-package lexer;
+package Parser;
 
+import Parser.Lexer;
 import java_cup.runtime.Symbol;
 import Main.Consola;
 import java.io.BufferedReader;
@@ -8,6 +9,7 @@ import java.io.IOException;
 import java.io.Reader;
 import java.util.ArrayList;
 import java.util.Collections;
+import lexer.TokenDesplegable;
 
 
 public class ScannerController {
